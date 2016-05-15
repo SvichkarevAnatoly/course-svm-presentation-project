@@ -14,6 +14,7 @@
 \usepackage{multirow}
 \usepackage{svg}
 \usepackage{textpos}
+\usepackage{amssymb}
 
 \usepackage{amsfonts}
 
@@ -58,6 +59,30 @@
 \end{frame}
 
 % теория
+\begin{frame}{Входные и выходные данные}
+    \begin{itemize}
+        \item Вход:
+            \begin{equation*}
+                \{(x_i, y_i)\}_{i = 1}^t, x_i \in X, y_i \in \mathbb{R}
+            \end{equation*}
+        \item Выход:
+            \begin{equation*}
+                D_t, \alpha_t
+            \end{equation*}
+        \item Параметры:
+            \begin{itemize}
+                \item параметр уровня разряженности:
+                    \begin{equation*}
+                        \nu
+                    \end{equation*}
+                \item параметры ядра (например RBF):
+                    \begin{equation*}
+                        \sigma
+                    \end{equation*}
+            \end{itemize}
+   \end{itemize}
+\end{frame}
+
 \begin{frame}{Алгоритм}
     \begin{figure}
         \center
