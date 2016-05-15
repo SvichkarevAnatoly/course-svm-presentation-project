@@ -57,6 +57,18 @@
 \titlepage
 \end{frame}
 
+% теория
+\begin{frame}{Root Mean Squared Error}
+    Среднеквадратическая ошибка:
+    \begin{equation*}
+        \textrm{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (f(y_i) - y_i)^2}
+    \end{equation*}
+    Для Leave-one-out Cross-Validation:
+    \begin{equation*}
+        \textrm{AverageRMSE} = \frac{1}{k} \sum_{i=1}^{k} \textrm{RMSE}_k
+    \end{equation*}
+\end{frame}
+
 % тестирование на модели
 \begin{frame}{Модельные данные 1}
     \fullsizegraphic{linear}
@@ -71,6 +83,22 @@
 \end{frame}
 
 % тестирование на реальных данных
+\begin{frame}{Реальные данные}
+    \includegraphics[width=\textwidth]{databike}
+    \bigskip
+
+    Ежедневный подсчёт арендованных велосипедов
+    за 2011 и 2012 год,
+    предоставленные велопрокатной фирмой в Вашингтоне.
+\end{frame}
+
+\begin{frame}{Велопрокат в СПб (Реклама)}
+    \begin{figure}
+        \includegraphics[width=\textwidth]{mapspb}
+        \caption{Велостанции и число доступных велоcипедов в СПб.}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{Реальные данные. Опорные вектора. Попытка 1}
     \fullsizegraphic{sv1}
 \end{frame}
